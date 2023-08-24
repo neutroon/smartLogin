@@ -81,20 +81,20 @@ function login() {
     if (emailNotExist(obj)) {
       swal("Email not exist befor!", "signup and login again!", "error");
     } else {
-      window.location.href = "./home.html";
+      window.location.href = "https://neutroon.github.io/smartLogin/home.html";
       
       sessionStorage.setItem('name', usr.usrName)
       if(!sessionStorage.getItem('name')){
 
-        window.location.href=`${location.host}/index.html`;
+        window.location.href=`https://neutroon.github.io/smartLogin/index.html`;
     }
     }
   }
 }
-console.log(location.host);
+
 if(location.pathname.includes('/home.html')){
     if(!sessionStorage.getItem('name')){
-        window.location.href="../index.html";
+        window.location.href="https://neutroon.github.io/smartLogin/index.html";
     }else{
         welcomeMsg.innerHTML = `welcome ${sessionStorage.getItem('name')}`;
     }
