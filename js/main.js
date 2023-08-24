@@ -85,13 +85,13 @@ function login() {
       
       sessionStorage.setItem('name', usr.usrName)
       if(!sessionStorage.getItem('name')){
-        window.location.href="../index.html";
+        window.location.href="./index.html";
     }
     }
   }
 }
 
-if(location.pathname =='/home.html'){
+if(location.pathname.includes('/home.html')){
     if(!sessionStorage.getItem('name')){
         window.location.href="../index.html";
     }else{
