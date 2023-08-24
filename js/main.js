@@ -81,7 +81,7 @@ function login() {
     if (emailNotExist(obj)) {
       swal("Email not exist befor!", "signup and login again!", "error");
     } else {
-      window.location.href = "../home.html";
+      window.location.href = "./home.html";
       
       sessionStorage.setItem('name', usr.usrName)
       if(!sessionStorage.getItem('name')){
